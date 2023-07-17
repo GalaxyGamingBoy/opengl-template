@@ -2,7 +2,7 @@
 
 mkdir build/ > /dev/null 2>&1
 cp -rf res/ build/res > /dev/null 2>&1
-rm -f ./build/GLFWTemplate > /dev/null 2>&1
+rm -f ./build/OpenGLTemplate > /dev/null 2>&1
 
 CACHE=$(cat CMakeLists.md5)
 GENERATED=$(md5sum CMakeLists.txt | cut -d' ' -f1)
@@ -20,4 +20,4 @@ md5sum CMakeLists.txt | cut -d' ' -f1 > CMakeLists.md5
 cd build
 make
 cd ..
-./build/GLFWTemplate
+./build/OpenGLTemplate

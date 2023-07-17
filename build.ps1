@@ -1,6 +1,6 @@
 mkdir -Force build/
 Copy-Item -Path res/ -Destination build/res -Force -Recurse
-rm -Force ./build/GLFWTemplate.exe
+rm -Force ./build/OpenGLTemplate.exe
 
 if ((Get-Content -Path CMakeLists.md5) -eq (Get-FileHash -Path CMakeLists.txt -Algorithm MD5).hash) {
     echo 'CMakeLists.txt has not changed. Ignoring Rebuild...'
@@ -14,4 +14,4 @@ if ((Get-Content -Path CMakeLists.md5) -eq (Get-FileHash -Path CMakeLists.txt -A
 cd build
 make
 cd ..
-./build/GLFWTemplate.exe
+./build/OpenGLTemplate.exe

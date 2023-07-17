@@ -2,7 +2,7 @@ include(FetchContent)
 cmake_minimum_required(VERSION 3.1...3.26)
 
 project(
-  GLFWTemplate
+  OpenGLTemplate
   VERSION 1.0
   LANGUAGES CXX)
 
@@ -15,6 +15,6 @@ FetchContent_MakeAvailable(glfw)
 
 # add_library(MyLibExample simple_lib.cpp simple_lib.hpp)
 find_package(glfw)
-#target_link_libraries(GLFWTemplate PRIVATE MyLibExample)
-add_executable(GLFWTemplate src/main.cpp)
-target_link_libraries(GLFWTemplate PRIVATE glfw)
+#target_link_libraries(OpenGLTemplate PRIVATE MyLibExample)
+add_executable(OpenGLTemplate src/main.cpp)
+target_link_libraries(OpenGLTemplate PRIVATE glfw)
