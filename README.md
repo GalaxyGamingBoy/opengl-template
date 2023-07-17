@@ -1,2 +1,2 @@
-# opengl-template
+# OpenGL Template
 A template for OpenGL
