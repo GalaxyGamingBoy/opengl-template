@@ -1,0 +1,1 @@
+sudo apt install -y xorg-dev --fix-missing

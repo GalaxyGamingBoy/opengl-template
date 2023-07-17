@@ -2,4 +2,4 @@ image: gitpod/workspace-full-vnc
 ports:
 - port: 6080
 tasks:
-  - init: "echo Welcome to GitPod"
+  - init: "bash ./utils/dependencies.sh"
