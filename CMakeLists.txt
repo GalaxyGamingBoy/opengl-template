@@ -15,6 +15,8 @@ FetchContent_MakeAvailable(glfw)
 
 # add_library(MyLibExample simple_lib.cpp simple_lib.hpp)
 find_package(glfw)
-#target_link_libraries(OpenGLTemplate PRIVATE MyLibExample)
+find_package(OpenGl REQUIRED)
+find_package(GLEW REQUIRED)
+
 add_executable(OpenGLTemplate src/main.cpp)
-target_link_libraries(OpenGLTemplate PRIVATE glfw)
+target_link_libraries(OpenGLTemplate ${OPENGL_LIBRARIES} glfw OpenGl GLEW)
